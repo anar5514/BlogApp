@@ -1,0 +1,10 @@
+{
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "fontawesome": "^5.6.3",
+    "ckeditor": "4.8.0"
+  },
+  "devDependencies": {}
+}

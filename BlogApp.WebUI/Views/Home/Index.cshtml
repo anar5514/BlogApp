@@ -1,0 +1,16 @@
+﻿@model HomeBlogModel
+@{
+    ViewData["Title"] = "Blog App";
+}
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-3">
+            @await Component.InvokeAsync("CategoryMenu")
+        </div>
+        <div class="col-md-9">
+            @Html.Partial("_slider", Model.SliderBlogs)
+            @Html.Partial("_blogList", Model.HomeBlogs)
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+﻿@model Category
+@{
+    ViewData["Title"] = "Create";
+    Layout = "_AdminLayout";
+}
+
+<div class="container mt-3">
+    <h1>Create</h1>
+    <br/>
+
+    <form method="post">
+        <input type="hidden" class="form-control" asp-for="Id"/>
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input asp-for="Name" class="form-control" />
+        </div>
+
+        <input class="btn btn-primary" type="submit" value="Submit" />
+
+    </form>
+</div>
+
